@@ -1,0 +1,8 @@
+<div className="p-10">
+      <div className="flex items-center justify-center bg-card w-50 h-50">
+        <div className="relative">
+          <div className="absolute -top-6 left-5 w-10 h-6 bg-[rgb(52,116,156)] rounded-t-lg"></div>
+          <div className="absolute top-0 left-0 w-20 h-35 bg-[rgba(144,212,255,0.5)] rounded-lg"></div>
+        </div>
+      </div>
+    </div>

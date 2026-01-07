@@ -11,7 +11,7 @@ export default function ClientLayout({
   children: React.ReactNode;
 }) {
   const [mounted, setMounted] = useState(false);
-  const isDesktop = useMediaQuery({ minWidth: 600 });
+  const isDesktop = useMediaQuery({ minWidth: 768 });
 
   useEffect(() => setMounted(true), []);
 
@@ -19,7 +19,7 @@ export default function ClientLayout({
 
   return (
     <div className="w-full h-screen dark">
-      <main className="relative flex w-full h-full">
+      <main className="relative flex flex-col-reverse md:flex-row w-full h-full">
         {isDesktop ? <Sidebar /> : <BottomNavigation />}
         {children}
       </main>

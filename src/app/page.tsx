@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </div>
 
-      <svg width="140" height="260" viewBox="0 0 140 260">
+      {/* <svg width="140" height="260" viewBox="0 0 140 260">
         <defs>
           <clipPath id="glassClip">
             <path d="M40 20 H100 V200 Q70 240 40 200 Z" />
@@ -41,7 +41,7 @@ export default function Home() {
           stroke="#222"
           strokeWidth="4"
         />
-      </svg>
+      </svg> */}
     </div>
   );
 }

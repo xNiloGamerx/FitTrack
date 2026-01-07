@@ -8,14 +8,20 @@ import { usePathname } from "next/navigation";
 type LinkElementProps = {
   Icon: LucideIcon;
   label: string;
+  tooltip: string;
   href: string;
 };
 
-export default function LinkElement({ Icon, label, href }: LinkElementProps) {
+export default function LinkElement({
+  Icon,
+  label,
+  tooltip,
+  href,
+}: LinkElementProps) {
   const pathname = usePathname();
 
   return (
-    <Link href={href}>
+    <Link href={href} title={tooltip}>
       <div
         className={clsx(
           "group flex items-center cursor-pointer transition-all gap-3 rounded-lg p-2",
